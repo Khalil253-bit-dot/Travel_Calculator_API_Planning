@@ -15,15 +15,24 @@ In the following section, you will notice that I refrained from using the CRUD v
 
 # Data Flow
 
-	I will implement a UI where the user can press a button that corresponds with the action they wish to do. I will then use text fields and dropdown menus to extract the necessary information, package it into a JSON file, and feed it to the corresponding function. Value and type errors will be handled through the UI, and asynchronous requests will be implemented so that if a user enters an incorrect value, it will give them an informative error message and let them try again.
+	I will implement a UI where the user can press a button that corresponds with the action they wish to do. 
+I will then use text fields and dropdown menus to extract the necessary information, package it into a JSON file, 
+and feed it to the corresponding function. Value and type errors will be handled through the UI, and asynchronous
+requests will be implemented so that if a user enters an incorrect value, it will give them an informative error message and let them try again.
   
 # Form Handling
 
-	There will be a submit button in the UI that lets the app know when the user is done entering info and will then put the responses into JSON format. The form controls will be relatively strict; the user will need to choose from a hard-coded list for constant elements (such as currency or date) to limit format errors. They will use only float values for amounts
+	There will be a submit button in the UI that lets the app know when the user is done
+entering info and will then put the responses into JSON format. The form controls will be
+relatively strict; the user will need to choose from a hard-coded list for constant elements (such as currency or date)
+to limit format errors. They will use only float values for amounts
   
 # Technology requirements
 
-	I will import create_engine, sessionmaker, Column, Integer, String, DateTime, Float, and Session from sqlalchemy and sqlalchemy.orm. I will need all these libraries to maintain the database of budgets for the user. From flask, I will need to import Flask, request, and jsonify. These are the standards libraries needed for creating RESTful APIs in Python (at least to my knowledge). I will also be using pytest to test my app. I think I will need to use BaseModel and Field from the pydantic library to implement some desired functionality, but I may be able to go without it. I will need tk and messagebox from the tkinter library for the UI.
+	I will import create_engine, sessionmaker, Column, Integer, String, DateTime, Float, and Session from sqlalchemy and sqlalchemy.orm.
+I will need all these libraries to maintain the database of budgets for the user. From flask, I will need to import
+Flask, request, and jsonify. These are the standards libraries needed for creating RESTful APIs in Python (at least to my knowledge).
+I will also be using pytest to test my app. I think I will need to use BaseModel and Field from the pydantic library to implement some desired functionality, but I may be able to go without it. I will need tk and messagebox from the tkinter library for the UI.
   
 # Implementation steps
 
